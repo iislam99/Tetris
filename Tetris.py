@@ -517,7 +517,7 @@ def gameloop():
                     sys.exit()
                 if e.type == pyg.KEYDOWN:
                     if e.key == pyg.K_SPACE:
-                        # Storing board grid
+                        # Resetting board grid
                         board_grid = []
                         for i in range(10):
                             temp = []
