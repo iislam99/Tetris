@@ -50,68 +50,110 @@ class tetromino:
             # Cyan
             if self.id == 1:
                 self.color = cyan
-                self.parts = [[boardWidth + 4*size, board_y + 4*size], [boardWidth + 5*size, board_y + 4*size], [boardWidth + 6*size, board_y + 4*size], [boardWidth + 7*size, board_y + 4*size]]
+                self.parts = [[boardWidth + 4*size, board_y + 4*size], 
+                              [boardWidth + 5*size, board_y + 4*size], 
+                              [boardWidth + 6*size, board_y + 4*size], 
+                              [boardWidth + 7*size, board_y + 4*size]]
             # Blue
             elif self.id == 2:
                 self.color = blue
-                self.parts = [[boardWidth + 4*size, board_y + 3*size], [boardWidth + 4*size, board_y + 4*size], [boardWidth + 5*size, board_y + 4*size], [boardWidth + 6*size, board_y + 4*size]]
+                self.parts = [[boardWidth + 4*size, board_y + 3*size], 
+                              [boardWidth + 4*size, board_y + 4*size], 
+                              [boardWidth + 5*size, board_y + 4*size], 
+                              [boardWidth + 6*size, board_y + 4*size]]
             # Orange
             elif self.id == 3:
                 self.color = orange
-                self.parts = [[boardWidth + 4*size, board_y + 4*size], [boardWidth + 5*size, board_y + 4*size], [boardWidth + 6*size, board_y + 4*size], [boardWidth + 6*size, board_y + 3*size]]
+                self.parts = [[boardWidth + 4*size, board_y + 4*size], 
+                              [boardWidth + 5*size, board_y + 4*size], 
+                              [boardWidth + 6*size, board_y + 4*size], 
+                              [boardWidth + 6*size, board_y + 3*size]]
             # Yellow
             elif self.id == 4:
                 self.color = yellow
-                self.parts = [[boardWidth + 4*size, board_y + 3*size], [boardWidth + 5*size, board_y + 3*size], [boardWidth + 4*size, board_y + 4*size], [boardWidth + 5*size, board_y + 4*size]]
+                self.parts = [[boardWidth + 4*size, board_y + 3*size], 
+                              [boardWidth + 5*size, board_y + 3*size], 
+                              [boardWidth + 4*size, board_y + 4*size], 
+                              [boardWidth + 5*size, board_y + 4*size]]
             # Green
             elif self.id == 5:
                 self.color = green
-                self.parts = [[boardWidth + 4*size, board_y + 4*size], [boardWidth + 5*size, board_y + 4*size], [boardWidth + 5*size, board_y + 3*size], [boardWidth + 6*size, board_y + 3*size]]
+                self.parts = [[boardWidth + 4*size, board_y + 4*size], 
+                              [boardWidth + 5*size, board_y + 4*size], 
+                              [boardWidth + 5*size, board_y + 3*size], 
+                              [boardWidth + 6*size, board_y + 3*size]]
             # Purple
             elif self.id == 6:
                 self.color = purple
-                self.parts = [[boardWidth + 4*size, board_y + 4*size], [boardWidth + 5*size, board_y + 4*size], [boardWidth + 6*size, board_y + 4*size], [boardWidth + 5*size, board_y + 3*size]]
+                self.parts = [[boardWidth + 4*size, board_y + 4*size], 
+                              [boardWidth + 5*size, board_y + 4*size], 
+                              [boardWidth + 6*size, board_y + 4*size], 
+                              [boardWidth + 5*size, board_y + 3*size]]
             # Red
             elif self.id == 7:
                 self.color = red
-                self.parts = [[boardWidth + 4*size, board_y + 3*size], [boardWidth + 5*size, board_y + 3*size], [boardWidth + 5*size, board_y + 4*size], [boardWidth + 6*size, board_y + 4*size]]
+                self.parts = [[boardWidth + 4*size, board_y + 3*size], 
+                              [boardWidth + 5*size, board_y + 3*size], 
+                              [boardWidth + 5*size, board_y + 4*size], 
+                              [boardWidth + 6*size, board_y + 4*size]]
         else:
             # LOCATION IN BOARD
             self.id = id
             # Cyan
             if self.id == 1:
                 self.color = cyan
-                self.parts = [[4*size, board_y - size], [5*size, board_y - size], [6*size, board_y - size], [7*size, board_y - size]]
+                self.parts = [[4*size, board_y - size], 
+                              [5*size, board_y - size], 
+                              [6*size, board_y - size], 
+                              [7*size, board_y - size]]
                 self.rotation_point = [self.parts[2][0], self.parts[2][1] + size]
             # Blue
             elif self.id == 2:
                 self.color = blue
-                self.parts = [[5*size, board_y - size], [5*size, board_y], [6*size, board_y], [7*size, board_y]]
+                self.parts = [[5*size, board_y - size], 
+                              [5*size, board_y], 
+                              [6*size, board_y], 
+                              [7*size, board_y]]
                 self.rotation_point = [self.parts[2][0] + size//2, self.parts[2][1] + size//2]
             # Orange
             elif self.id == 3:
                 self.color = orange
-                self.parts = [[7*size, board_y - size], [7*size, board_y], [6*size, board_y], [5*size, board_y]]
+                self.parts = [[7*size, board_y - size], 
+                              [7*size, board_y], 
+                              [6*size, board_y], 
+                              [5*size, board_y]]
                 self.rotation_point = [self.parts[2][0] + size//2, self.parts[2][1] + size//2]
             # Yellow
             elif self.id == 4:
                 self.color = yellow
-                self.parts = [[5*size, board_y - size], [6*size, board_y - size], [5*size, board_y], [6*size, board_y]]
+                self.parts = [[5*size, board_y - size], 
+                              [6*size, board_y - size], 
+                              [5*size, board_y], 
+                              [6*size, board_y]]
                 self.rotation_point = [0, 0]
             # Green
             elif self.id == 5:
                 self.color = green
-                self.parts = [[5*size, board_y], [6*size, board_y], [6*size, board_y - size], [7*size, board_y - size]]
+                self.parts = [[5*size, board_y], 
+                              [6*size, board_y], 
+                              [6*size, board_y - size], 
+                              [7*size, board_y - size]]
                 self.rotation_point = [self.parts[1][0] + size//2, self.parts[1][1] + size//2]
             # Purple
             elif self.id == 6:
                 self.color = purple
-                self.parts = [[5*size, board_y], [6*size, board_y], [7*size, board_y], [6*size, board_y - size]]
+                self.parts = [[5*size, board_y], 
+                              [6*size, board_y], 
+                              [7*size, board_y], 
+                              [6*size, board_y - size]]
                 self.rotation_point = [self.parts[1][0], self.parts[1][1]]
             # Red
             elif self.id == 7:
                 self.color = red
-                self.parts = [[5*size, board_y - size], [6*size, board_y - size], [6*size, board_y], [7*size, board_y]]
+                self.parts = [[5*size, board_y - size], 
+                              [6*size, board_y - size], 
+                              [6*size, board_y], 
+                              [7*size, board_y]]
                 self.rotation_point = [self.parts[2][0] + size//2, self.parts[2][1] + size//2]
     
     # Converts X coordinate on window to X coordinate on board
